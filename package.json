@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "build": "esbuild main.js --bundle --platform=node --outdir=dist",
+    "trace": "trace-deps trace --input ./dist/main.js",
+    "trace-original": "trace-deps trace --input ./main.js"
+  },
+  "dependencies": {
+    "esbuild": "^0.15.15",
+    "md5": "^2.3.0",
+    "trace-deps": "^0.5.1"
+  }
+}
